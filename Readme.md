@@ -4,10 +4,7 @@ This repo provides code for hosting an AspNet Core App inside an Azure Function 
 ## Prerequisites
 1. Will to use the new isolated dotnet worker for functions (see the [repo](https://github.com/Azure/azure-functions-dotnet-worker))
 1. .Net Core SDK >= 5.0.4
-1. Latest Azure Function Core Tools v3
-```
-npm install -g azure-functions-core-tools@3
-```
+1. Install the [Azure Function Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local) for your preferred platform and language
 
 ## Instructions
 1. Install the project template for dotnet and create a new project.
