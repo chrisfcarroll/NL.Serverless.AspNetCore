@@ -9,9 +9,23 @@ This repo provides code for hosting an AspNet Core App inside an Azure Function 
 ## Instructions
 1. Install the project template for dotnet and create a new project.
 ```
-dotnet new --install NL.Serverless.AspNetCore.Template
+dotnet new install NL.Serverless.AspNetCore.Template
 dotnet new serverless-aspnetcore -n Your.New.ProjectName
 ```
+   Or, if you have cloned this repo locally, you can do
+```
+dotnet new install $path_to_this_repo/template
+dotnet new serverless-aspnetcore -n Your.New.ProjectName
+```
+   A local edit-uninstall-install cycle goes like this:
+```
+dotnet new install $full_path_to_this_repo/template
+dotnet new uninstall $full_path_to_this_repo/template
+# make some edits
+dotnet new serverless-aspnetcore
+#Goto start
+```
+
 2. Happy coding your AspNet Core WebApp.
 3. Run the Azure Function hosting the web app
 ```
