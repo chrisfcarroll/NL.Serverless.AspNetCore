@@ -21,9 +21,9 @@ dotnet new serverless-aspnetcore -n Your.New.ProjectName
 ```
 dotnet new install $full_path_to_this_repo/template
 dotnet new uninstall $full_path_to_this_repo/template
-# make some edits
+// make some edits
 dotnet new serverless-aspnetcore
-#Goto start
+// Goto start
 ```
 
 2. Happy coding your AspNet Core WebApp.
